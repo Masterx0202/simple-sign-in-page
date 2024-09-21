@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 import pymongo
 
 app = Flask(__name__)
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+# enter youre database
+client = pymongo.MongoClient("DATABASE")
 db = client.userlistfirstdatabaseproject
 
 dbuserdata = db.userdata
