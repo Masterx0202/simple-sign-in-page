@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+</head>
+<body>
+    <h1>Welcome {{name}}! Your password is {{password}}</h1>
+    <br>
+    <h3>User Information</h3>
+    <p>Name: {{ name }}</p>
+    <p>Password: {{ password }}</p>
+</body>
+</html>
